@@ -1,0 +1,36 @@
+.buttons {
+  margin-bottom: 30px;
+}
+
+.buttons button {
+  padding: 8px 15px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+}
+
+.buttons button + button {
+  margin-left: 10px;
+}
+
+.user-box {
+  display: block;
+  max-width: 300px;
+  min-height: 300px;
+  grid-column: span 6;
+  background-color: hsl(0, 0%, 93%);
+  color: #222;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 620px) {
+  .user-box {
+    grid-column: span 4;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .user-box {
+    grid-column: span 2;
+  }
+}
